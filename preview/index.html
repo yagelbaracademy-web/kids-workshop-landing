@@ -23,12 +23,12 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"מה ייחודי בסדנת ילדים ברשת?","acceptedAnswer":{"@type":"Answer","text":"הסדנה מגיעה מבפנים. יגל בר, יוצר תוכן עם 7+ שנות ניסיון ביצירת תכנים שהגיעו לעשרות מיליוני צפיות, מסביר לילדים איך הרשתות עובדות מאחורי הקלעים — עם דוגמאות מעולמם של הילדים ובשפה שהם מבינים."}},
+      {"@type":"Question","name":"מה ייחודי בסדנת ילדים ברשת?","acceptedAnswer":{"@type":"Answer","text":"הסדנה מגיעה מבפנים. יגל בר, יוצר תוכן עם 7+ שנות ניסיון ביצירת תכנים שהגיעו לעשרות מיליוני צפיות, מסביר לילדים איך הרשתות עובדות מאחורי הקלעים - עם דוגמאות מעולמם של הילדים ובשפה שהם מבינים."}},
       {"@type":"Question","name":"לאיזה מסגרות מתאימה הסדנה?","acceptedAnswer":{"@type":"Answer","text":"בתי ספר יסודיים (כיתות ג׳-ו׳), מתנ\"סים ומרכזים חברתיים, עיריות ומועצות אזוריות, קייטנות וערבי הורים. מוזמנת בדרך כלל על ידי מנהלי בתי ספר, יועצות ויועצים חינוכיים, רכזי מוגנות ותקשוב ומנהלי אגפי חינוך בעיריות."}},
       {"@type":"Question","name":"האם התוכן מותאם לגיל הילדים?","acceptedAnswer":{"@type":"Answer","text":"כן. הסדנה נבנתה במיוחד לגיל בית הספר היסודי, כיתות ג׳-ו׳, ומכוונת לפני כל מפגש לשכבת הגיל הספציפית."}},
-      {"@type":"Question","name":"האם ניתן לממן דרך תקציב גפן?","acceptedAnswer":{"@type":"Answer","text":"כן. הסדנה מאושרת רשמית למימון דרך תקציב גפ\"ן — מספר תוכנית 70107."}},
+      {"@type":"Question","name":"האם ניתן לממן דרך תקציב גפן?","acceptedAnswer":{"@type":"Answer","text":"כן. הסדנה מאושרת רשמית למימון דרך תקציב גפ\"ן - מספר תוכנית 70107."}},
       {"@type":"Question","name":"כמה זמן נמשכת הסדנה?","acceptedAnswer":{"@type":"Answer","text":"מפגש חד-פעמי נמשך כשעה. ניתן גם להזמין סדרת מפגשים מעמיקה לפי הצורך ולוח הזמנים של בית הספר."}},
-      {"@type":"Question","name":"לכמה תלמידים אפשר בבת אחת?","acceptedAnswer":{"@type":"Answer","text":"גמיש לחלוטין — אפשר להזמין לכיתה בודדת, לשכבה שלמה, ואפילו לכל בית הספר."}},
+      {"@type":"Question","name":"לכמה תלמידים אפשר בבת אחת?","acceptedAnswer":{"@type":"Answer","text":"גמיש לחלוטין - אפשר להזמין לכיתה בודדת, לשכבה שלמה, ואפילו לכל בית הספר."}},
       {"@type":"Question","name":"כמה זמן מראש כדאי להזמין את הסדנה?","acceptedAnswer":{"@type":"Answer","text":"מומלץ ליצור קשר מוקדם ככל האפשר, במיוחד סביב תחילת שנת הלימודים כשהמועדים מתמלאים מהר."}}
     ]
   }
@@ -143,7 +143,9 @@
     .hero-scroll-cue svg:last-child { animation-delay: .18s; }
     @keyframes sc { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
     .sched-short { display: none; }
+    .br-mobile { display: none; }
     @media (max-width: 720px) {
+      .br-mobile { display: block; }
       #hero { min-height: 0; padding: 104px 20px 48px; }
       .hero-schedule { font-size: 14px; padding: 10px 18px; gap: 9px; white-space: nowrap; }
       .sched-long { display: none; }
@@ -176,11 +178,11 @@
     .learn-section { background: var(--bg-warm); border-radius: var(--radius-lg); padding: 24px 20px; }
     .learn-heading { font-size: 18px; margin-bottom: 14px; }
     .learn-badges { display: flex; flex-direction: column; gap: 10px; }
-    .learn-badge { display: flex; align-items: flex-start; gap: 14px; background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; box-shadow: 0 6px 18px rgba(0,0,0,.04); transition: transform .25s, box-shadow .25s; }
+    .learn-badge { display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 18px 18px; box-shadow: 0 6px 18px rgba(0,0,0,.04); transition: transform .25s, box-shadow .25s; }
     .learn-badge:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.07); }
-    .learn-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--orange-soft); border: 1.5px solid rgba(234,88,12,.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .learn-icon svg { width: 17px; height: 17px; stroke: var(--orange); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-    .learn-badge h4 { font-size: 15.5px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+    .learn-icon { width: 38px; height: 38px; border-radius: 10px; background: var(--orange-soft); border: 1.5px solid rgba(234,88,12,.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin: 0 auto 10px; }
+    .learn-icon svg { width: 18px; height: 18px; stroke: var(--orange); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .learn-badge h4 { font-size: 15.5px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
     .learn-badge p { font-size: 13.5px; color: var(--text-mid); line-height: 1.5; }
     @media (max-width: 860px) { .intro-grid { grid-template-columns: 1fr; gap: 36px; } }
 
@@ -452,15 +454,15 @@
     /* ── באדג'ים/אייקונים בהירו ── */
     .hero-ctas { justify-content: center !important; }
 
-    /* ── אייקונים בכרטיסים (outcomes, how-it-works) — למרכז אותם בתוך הכרטיס ── */
+    /* ── אייקונים בכרטיסים (outcomes, how-it-works) - למרכז אותם בתוך הכרטיס ── */
     .outcome-icon, .how-num { margin-left: auto !important; margin-right: auto !important; }
     .outcome, .how-step { display: flex !important; flex-direction: column; align-items: center !important; }
 
-    /* ── לוגו בית ספר + שם ותפקיד הממליץ/ה — למרכז בתוך כרטיס ההמלצה ── */
+    /* ── לוגו בית ספר + שם ותפקיד הממליץ/ה - למרכז בתוך כרטיס ההמלצה ── */
     .tschool-logo { left: 50% !important; transform: translateX(-50%) !important; }
     .tauthor { flex-direction: column !important; justify-content: center !important; gap: 4px !important; }
 
-    /* ── תמונת יגל בסקשן "על המרצה" — למרכז ── */
+    /* ── תמונת יגל בסקשן "על המרצה" - למרכז ── */
     .about-image { margin: 0 auto !important; }
 
     /* ── חץ גלילה בין סקשנים ── */
@@ -487,7 +489,7 @@
     <h1>מה שקורה לילדים ברשת, לא נשאר שם. <span class="accent">זה מגיע לבית, לרחוב, לבית הספר.</span></h1>
     <div class="hero-divider"></div>
     <p class="hero-promise">
-      סדנה חווייתית לכיתות ג׳-ו׳ שמלמדת את התלמידים לזהות איך הרשת משפיעה עליהם, להתמודד עם <strong>לחץ חברתי ובריונות</strong>, ולקבל החלטות חכמות יותר ברשת - בגובה העיניים ובשפה שלהם.
+      סדנה חווייתית לכיתות ג׳-ו׳ שמלמדת את התלמידים לזהות איך הרשת משפיעה עליהם,<br class="br-mobile"> להתמודד עם <strong>לחץ חברתי ובריונות</strong>,<br class="br-mobile"> ולקבל החלטות חכמות יותר ברשת - בגובה העיניים ובשפה שלהם.
     </p>
     <div class="hero-byline">
       <div class="hero-byline-photo"><img src="images/yagel-podcast.jpg" alt="יגל בר"></div>
@@ -505,12 +507,12 @@
   </div>
 </section>
 
-<!-- ══ INTRO — הבעיה + נושאי הסדנה ══ -->
+<!-- ══ INTRO - הבעיה + נושאי הסדנה ══ -->
 <section id="intro">
   <div class="container-wide">
     <div class="intro-grid">
       <div class="intro-text reveal in">
-        <p class="intro-emphasis">הילדים צריכים מישהו שיעזור להם להבין את עולם הדיגיטל ויתן להם כלים להתמודד עם האתגרים בו. מישהו שחי את העולם הזה.</p>
+        <p class="intro-emphasis">הילדים צריכים מישהו שיעזור להם להבין את עולם הדיגיטל<br class="br-mobile"> ויתן להם כלים להתמודד עם האתגרים בו. מישהו שחי את העולם הזה.</p>
         <div class="intro-avatar"><img src="images/hero-kids.png" alt="תלמיד מביט בטלפון בזמן שחברות לועגות לו ברקע"></div>
         <p>אני יוצר תוכן עם מעל <strong style="color:var(--orange)">150 מיליון צפיות</strong>, למותגים, עמותות ומשפיענים מוכרים. בסדנה אני חושף בפני התלמידים את <strong>המנגנונים מאחורי הקלעים</strong> שמשפיעים עליהם.</p>
       </div>
@@ -632,7 +634,7 @@
   <div class="proof-overlay">
     <div class="proof-caption">
       <h3>שכבה שלמה. קשב מלא.</h3>
-      <p>מתוך סדנה של יגל בבית ספר — ככה זה נראה כשמדברים עם תלמידים בשפה שלהם.</p>
+      <p>מתוך סדנה של יגל בבית ספר - ככה זה נראה כשמדברים עם תלמידים בשפה שלהם.</p>
     </div>
   </div>
 </section>
@@ -687,7 +689,7 @@
       <div class="outcome reveal reveal-d1 in">
         <div class="outcome-icon"><svg viewBox="0 0 24 24"><path d="M9.5 3.5a3 3 0 0 0-3 3 2.7 2.7 0 0 0-2 2.6c0 .5.13.96.36 1.36A2.8 2.8 0 0 0 3.5 13c0 1.06.6 1.98 1.48 2.44A2.6 2.6 0 0 0 5 16.5 2.5 2.5 0 0 0 7.5 19c.2 0 .4-.02.58-.06A2.5 2.5 0 0 0 10.5 21c1.1 0 2-.78 2.2-1.82.2.04.4.06.6.06V4.3a3 3 0 0 0-3.8-.8Z"/><path d="M14.5 3.5a3 3 0 0 1 3 3 2.7 2.7 0 0 1 2 2.6c0 .5-.13.96-.36 1.36A2.8 2.8 0 0 1 20.5 13c0 1.06-.6 1.98-1.48 2.44.03.18.05.37.05.56A2.5 2.5 0 0 1 16.5 19a2.5 2.5 0 0 1-2.42-1.06 2.5 2.5 0 0 1-.78.06V4.3a3 3 0 0 1 1.2-.8Z"/></svg></div>
         <h3>חשיבה ביקורתית ואחריות אישית</h3>
-        <p>משפיענים, פרסום סמוי, לחץ חברתי ברשת — הם לומדים לזהות בזמן אמת כשמנסים להשפיע עליהם, ואיך לפעול.</p>
+        <p>משפיענים, פרסום סמוי, לחץ חברתי ברשת - הם לומדים לזהות בזמן אמת כשמנסים להשפיע עליהם, ואיך לפעול.</p>
       </div>
       <div class="outcome reveal reveal-d2 in">
         <div class="outcome-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
@@ -697,17 +699,17 @@
       <div class="outcome reveal in">
         <div class="outcome-icon"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
         <h3>שמירה על גבולות ופרטיות</h3>
-        <p>כלים מעשיים לשמירה על עצמם ברשת — מה לשתף ומה לא, ואיך להגיב לסיטואציות שמרגישות לא בסדר.</p>
+        <p>כלים מעשיים לשמירה על עצמם ברשת - מה לשתף ומה לא, ואיך להגיב לסיטואציות שמרגישות לא בסדר.</p>
       </div>
       <div class="outcome reveal reveal-d1 in">
         <div class="outcome-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polygon points="15 9 12.5 12.5 9 15 11.5 11.5 15 9"/></svg></div>
         <h3>תחושת מסוגלות ובחירה</h3>
-        <p>הילדים יוצאים עם הבנה שיש להם בחירה — גם כשיש לחץ, גם כשכולם עושים אחרת. ושהבחירות שלהם ברשת באמת משנות.</p>
+        <p>הילדים יוצאים עם הבנה שיש להם בחירה - גם כשיש לחץ, גם כשכולם עושים אחרת. ושהבחירות שלהם ברשת באמת משנות.</p>
       </div>
       <div class="outcome reveal reveal-d2 in">
         <div class="outcome-icon"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3>מבט אחר על הרשת</h3>
-        <p>הסדנה מעצימה: הילדים מגלים שרשתות חברתיות יכולות גם לחבר, לרגש ולהשפיע לטובה — ושגם להם יש מקום להשפיע בה.</p>
+        <p>הסדנה מעצימה: הילדים מגלים שרשתות חברתיות יכולות גם לחבר, לרגש ולהשפיע לטובה - ושגם להם יש מקום להשפיע בה.</p>
       </div>
     </div>
   </div>
@@ -738,7 +740,7 @@
       </div>
       <div class="fact-row">
         <span class="fact-label">פורמט</span>
-        <span class="fact-value">מפגש חווייתי ואינטראקטיבי — דוגמאות חיות מהרשת, טרנדים שהילדים מכירים, ושיח פתוח עם התלמידים לאורך כל המפגש</span>
+        <span class="fact-value">מפגש חווייתי ואינטראקטיבי - דוגמאות חיות מהרשת, טרנדים שהילדים מכירים, ושיח פתוח עם התלמידים לאורך כל המפגש</span>
       </div>
       <div class="fact-row">
         <span class="fact-label">מימון</span>
@@ -752,8 +754,8 @@
         <span class="fact-label">אפשרויות נוספות</span>
         <span class="fact-value">
           <ul class="fact-bullets">
-            <li>סדנה נפרדת להורים — כלים להמשיך את השיחה בבית</li>
-            <li>סדנה לצוות החינוכי — כיצד לתמוך בתלמידים</li>
+            <li>סדנה נפרדת להורים - כלים להמשיך את השיחה בבית</li>
+            <li>סדנה לצוות החינוכי - כיצד לתמוך בתלמידים</li>
           </ul>
         </span>
       </div>
@@ -772,17 +774,17 @@
       <div class="how-step reveal in">
         <div class="how-num">1</div>
         <h3>משאירים פרטים</h3>
-        <p>בטופס כאן למטה או בהודעת וואטסאפ — מה שנוח לכם. נחזור אליכם בהקדם.</p>
+        <p>בטופס כאן למטה או בהודעת וואטסאפ - מה שנוח לכם. נחזור אליכם בהקדם.</p>
       </div>
       <div class="how-step reveal reveal-d1 in">
         <div class="how-num">2</div>
         <h3>שיחת היכרות קצרה</h3>
-        <p>נדבר על בית הספר, הצרכים והמועדים — ותקבלו הצעה מסודרת, כולל כל מה שצריך.</p>
+        <p>נדבר על בית הספר, הצרכים והמועדים - ותקבלו הצעה מסודרת, כולל כל מה שצריך.</p>
       </div>
       <div class="how-step reveal reveal-d2 in">
         <div class="how-num">3</div>
         <h3>הסדנה אצלכם</h3>
-        <p>יגל מגיע לבית הספר עם כל הציוד. אתם רק דואגים לאולם ומקרן — והתלמידים מקבלים מפגש בלתי נשכח.</p>
+        <p>יגל מגיע לבית הספר עם כל הציוד. אתם רק דואגים לאולם ומקרן - והתלמידים מקבלים מפגש בלתי נשכח.</p>
       </div>
     </div>
   </div>
@@ -800,14 +802,14 @@
           <span class="faq-q">מה ייחודי בסדנת "ילדים ברשת"?</span>
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <p class="faq-a">הסדנה מגיעה מבפנים. יגל בר - יוצר תוכן עם 7+ שנות ניסיון ביצירת תכנים שהגיעו לעשרות מיליוני צפיות - מסביר לילדים איך הרשתות עובדות מאחורי הקלעים. עם דוגמאות מעולמם של הילדים, ובשפה שהם מבינים. זה מפגש שעוזר לתלמידים להבין את העולם הדיגיטלי, ונותן להם כלים חשובים להתמודדות עם האתגרים בו.</p>
+        <p class="faq-a">הסדנה מגיעה מבפנים. יגל בר - יוצר תוכן עם 7+ שנות ניסיון ביצירת תכנים שהגיעו לעשרות מיליוני צפיות<br class="br-mobile"> - מסביר לילדים איך הרשתות עובדות מאחורי הקלעים. עם דוגמאות מעולמם של הילדים, ובשפה שהם מבינים.<br class="br-mobile"> זה מפגש שעוזר לתלמידים להבין את העולם הדיגיטלי, ונותן להם כלים חשובים להתמודדות עם האתגרים בו.</p>
       </div>
       <div class="faq-item reveal in">
         <button class="faq-btn" aria-expanded="false">
           <span class="faq-q">לאיזה מסגרות מתאימה הסדנה?</span>
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <p class="faq-a">הסדנה מתאימה לבתי ספר יסודיים (כיתות ג׳-ו׳), מתנ"סים ומרכזים חברתיים, עיריות ומועצות אזוריות, קייטנות וערבי הורים. בדרך כלל מוזמנת על ידי מנהלות ומנהלי בתי ספר, יועצות ויועצים חינוכיים, רכזות ורכזי מוגנות ותקשוב, מנהלי אגפי חינוך בעיריות ומנהלי מתנ"סים.</p>
+        <p class="faq-a">הסדנה מתאימה לבתי ספר יסודיים (כיתות ג׳-ו׳), מתנ"סים ומרכזים חברתיים,<br class="br-mobile"> עיריות ומועצות אזוריות, קייטנות וערבי הורים. בדרך כלל מוזמנת על ידי מנהלות ומנהלי בתי ספר, יועצות ויועצים חינוכיים,<br class="br-mobile"> רכזות ורכזי מוגנות ותקשוב, מנהלי אגפי חינוך בעיריות ומנהלי מתנ"סים.</p>
       </div>
       <div class="faq-item reveal in">
         <button class="faq-btn" aria-expanded="false">
@@ -828,14 +830,14 @@
           <span class="faq-q">לכמה תלמידים אפשר בבת אחת?</span>
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <p class="faq-a">גמיש לחלוטין — אפשר להזמין לכיתה בודדת, לשכבה שלמה, ואפילו לכל בית הספר.</p>
+        <p class="faq-a">גמיש לחלוטין - אפשר להזמין לכיתה בודדת, לשכבה שלמה, ואפילו לכל בית הספר.</p>
       </div>
       <div class="faq-item reveal in">
         <button class="faq-btn" aria-expanded="false">
           <span class="faq-q">האם ניתן לממן דרך תקציב גפן?</span>
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <p class="faq-a">כן. הסדנה מאושרת רשמית למימון דרך תקציב גפ"ן — מספר תוכנית 70107. אפשר לאתר אותה ישירות בקטלוג התוכניות.</p>
+        <p class="faq-a">כן. הסדנה מאושרת רשמית למימון דרך תקציב גפ"ן - מספר תוכנית 70107. אפשר לאתר אותה ישירות בקטלוג התוכניות.</p>
       </div>
       <div class="faq-item reveal in">
         <button class="faq-btn" aria-expanded="false">
@@ -856,7 +858,7 @@
           <span class="faq-q">כמה זמן מראש כדאי להזמין?</span>
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <p class="faq-a">מומלץ ליצור קשר מוקדם ככל האפשר, במיוחד סביב תחילת שנת הלימודים כשהמועדים מתמלאים מהר. אין בעיה לתאם גם באמצע השנה — פשוט ככל שפונים מוקדם יותר, קל יותר למצוא את התאריך שהכי מתאים לבית הספר.</p>
+        <p class="faq-a">מומלץ ליצור קשר מוקדם ככל האפשר, במיוחד סביב תחילת שנת הלימודים כשהמועדים מתמלאים מהר. אין בעיה לתאם גם באמצע השנה - פשוט ככל שפונים מוקדם יותר, קל יותר למצוא את התאריך שהכי מתאים לבית הספר.</p>
       </div>
       <div class="faq-item reveal in">
         <button class="faq-btn" aria-expanded="false">
@@ -875,7 +877,7 @@
     <div class="cta-left reveal in">
       <div class="cta-photo"><img src="images/yagel-lecture-circle.jpg" alt="יגל בר מרצה בסדנה מול תלמידים"></div>
       <h2>רוצים לשמוע יותר?<br>בואו נדבר.</h2>
-      <p>השאירו פרטים ונחזור אליכם בהקדם לתיאום שיחת היכרות. המועדים לשנת הלימודים תשפ"ז מתואמים בימים אלה — שווה לשריין מוקדם.</p>
+      <p>השאירו פרטים ונחזור אליכם בהקדם לתיאום שיחת היכרות.<br class="br-mobile"> המועדים לשנת הלימודים תשפ"ז מתואמים בימים אלה - שווה לשריין מוקדם.</p>
       <div class="promises">
         <div class="promise">
           <div class="promise-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
